@@ -2,17 +2,17 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 ## To Start the project
-Clone the repo link from github
-Create folder GoogleKeep
-Open this folder in vs code 
+Clone the repo link from github\
+Create folder GoogleKeep\
+Open this folder in vs code\ 
 
-Enter the command 
-1.git clone https://github.com/harsh-2025/keep_assign_jeta
-2.npm install or npm i
-3.npm start
+Enter the command \
+1.git clone https://github.com/harsh-2025/keep_assign_jeta \
+2.npm install or npm i\
+3.npm start\
 
-Go to http://localhost:3000 or your localhost port on which applications run
-Happy to add notes
+Go to http://localhost:3000 or your localhost port on which applications run \
+Happy to add notes \
 
 
 
