@@ -1,0 +1,153 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background-color: #ffab00;
+  padding: 15px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.note-form {
+  background: white;
+  padding: 20px;
+  width: 45%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.note-form input,
+.note-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.note-form input:focus,
+.note-form textarea:focus {
+  border-color: #ffab00;
+}
+
+.note-form button {
+  background-color: #ffab00;
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  width: 40%;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.note-form button:hover {
+  background-color: #ff9100;
+}
+
+.notes-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.note {
+  background: white;
+  padding: 15px;
+  width: 260px;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+  position: relative;
+}
+
+.note:hover {
+  transform: scale(1.05);
+}
+
+.note h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.note p {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #666;
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+.note .actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.note  button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #555;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.note  button:hover {
+  color: #ff9100;
+  background: rgba(255, 145, 0, 0.1);
+  transform: scale(1.1);
+}
+
+.note  button i {
+  font-size: 22px;
+}
+
+.empty-message {
+  text-align: center;
+  font-size: 18px;
+  color: gray;
+}
